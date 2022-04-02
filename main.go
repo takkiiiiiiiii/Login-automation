@@ -39,7 +39,7 @@ func main() {
 	if err = btn.Click(); err != nil {
 		log.Fatalf("Failed to navigate:%v", err)
 	}
-	// 処理完了後、3秒間ブラウザを表示しておく
+	// 処理完了後、10秒間ブラウザを表示しておく
 	time.Sleep(10 * time.Second)
 
 }
