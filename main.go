@@ -27,8 +27,8 @@ func main() {
 	// ID, Passの要素を取得し、値を設定
 	identity := page.FindByID("username")
 	password := page.FindByID("password")
-	identity.Fill("s1290077")
-	password.Fill("takkiiiiiiiii25")
+	identity.Fill("own id")
+	password.Fill("own password")
 	// formをサブミット
 	/*
 		if err := page.FindByClass("loginbtn.btn.btn-primary.btn-block.mt-3").Submit(); err != nil {
