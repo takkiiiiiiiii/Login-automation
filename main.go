@@ -29,12 +29,7 @@ func main() {
 	password := page.FindByID("password")
 	identity.Fill("own id")
 	password.Fill("own password")
-	// formをサブミット
-	/*
-		if err := page.FindByClass("loginbtn.btn.btn-primary.btn-block.mt-3").Submit(); err != nil {
-			log.Fatalf("Failed to login:%v", err)
-		}
-	*/
+	// formをサブミットして、ログイン
 	btn := page.FindByButton("Log in")
 	if err = btn.Click(); err != nil {
 		log.Fatalf("Failed to navigate:%v", err)
